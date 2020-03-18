@@ -11,6 +11,7 @@ public class store : MonoBehaviour
 
     int StoreCount;
     public Text StoreCountText;
+    public Text CurrentBalanceText;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class store : MonoBehaviour
         StoreCount = 1;
         CurrentBalance = 2.0f;
         BaseStoreCost = 1.50f;
+        CurrentBalanceText.text = CurrentBalance.ToString("C2");
 
     }
 
@@ -39,6 +41,7 @@ public class store : MonoBehaviour
         Debug.Log(StoreCount);
         StoreCountText.text = StoreCount.ToString();
         CurrentBalance -= BaseStoreCost;
+        CurrentBalanceText.text = CurrentBalance.ToString("C2");
         Debug.Log(CurrentBalance);
 
     }

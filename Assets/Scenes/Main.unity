@@ -668,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.08137024, y: 0.5532335}
   m_AnchorMax: {x: 0.35037008, y: 0.7416498}
-  m_AnchoredPosition: {x: 19.04, y: -1}
+  m_AnchoredPosition: {x: 19.039978, y: -1}
   m_SizeDelta: {x: 39.08, y: -0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403267947
@@ -720,6 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoreCountText: {fileID: 990017415}
+  CurrentBalanceText: {fileID: 1303440889}
 --- !u!1 &1754221216
 GameObject:
   m_ObjectHideFlags: 0
