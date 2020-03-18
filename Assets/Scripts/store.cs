@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class store : MonoBehaviour
 {
 
+    float CurrentBalance;
+    float BaseStoreCost;
+
     int StoreCount;
     public Text StoreCountText;
 
@@ -14,6 +17,8 @@ public class store : MonoBehaviour
     {
 
         StoreCount = 1;
+        CurrentBalance = 2.0f;
+        BaseStoreCost = 1.50f;
 
     }
 
@@ -26,9 +31,15 @@ public class store : MonoBehaviour
     public void BuyStoreOnClick()
     {
 
+        if(BaseStoreCost > CurrentBalance)
+        {
+            return;
+        }
         StoreCount += 1;
         Debug.Log(StoreCount);
         StoreCountText.text = StoreCount.ToString();
+        CurrentBalance -= BaseStoreCost;
+        Debug.Log(CurrentBalance);
 
     }
 }
