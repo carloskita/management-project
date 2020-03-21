@@ -30,4 +30,18 @@ public class gameManager : MonoBehaviour
         CurrentBalanceText.text = CurrentBalance.ToString("C2");
 
     }
+
+    public bool CanBuy(float AmtToSpend)
+    {
+
+        if(AmtToSpend > CurrentBalance)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+    }
 }
