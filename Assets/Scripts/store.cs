@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class store : MonoBehaviour
 {
 
-    float BaseStoreCost;
-    float BaseStoreProfit;
+    public float BaseStoreCost;
+    public float BaseStoreProfit;
 
 
     int StoreCount;
@@ -15,7 +15,7 @@ public class store : MonoBehaviour
     public Slider ProgressSlider;
     public gameManager GameManager;
 
-    float StoreTimer = 4f;
+    public float StoreTimer = 3f;
     float CurrentTimer = 0;
     bool StartTimer;
 
@@ -24,8 +24,6 @@ public class store : MonoBehaviour
     {
 
         StoreCount = 1;
-        BaseStoreCost = 1.50f;
-        BaseStoreProfit = .5f;
         StartTimer = false;
 
     }
